@@ -8,7 +8,7 @@ import 'package:pictures_feed/domain/bloc/pictures_request/pictures_request_bloc
 import 'package:pictures_feed/domain/bloc/pictures_request/pictures_request_event.dart';
 import 'package:pictures_feed/presentation/page/picture_view_page.dart';
 import 'package:pictures_feed/presentation/page/pictures_feed_page.dart';
-import 'package:pictures_feed/presentation/util/constants/strings.dart';
+import 'package:pictures_feed/presentation/util/constant/strings.dart';
 import 'package:provider/provider.dart';
 
 class Application extends StatelessWidget {

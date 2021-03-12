@@ -1,7 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:pictures_feed/presentation/page/picture_view_page.dart';
-import 'package:pictures_feed/presentation/util/constants/strings.dart';
+import 'package:pictures_feed/presentation/util/constant/strings.dart';
 import 'package:pictures_feed/presentation/widget/like_button_widget.dart';
 
 class PictureCardWidget extends StatefulWidget {

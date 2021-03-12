@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pictures_feed/presentation/util/constants/strings.dart';
+import 'package:pictures_feed/presentation/util/constant/strings.dart';
 
 class GreetingsWidget extends StatefulWidget {
   @override
