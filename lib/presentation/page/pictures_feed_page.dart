@@ -66,7 +66,8 @@ class _PicturesFeedPageState extends State<PicturesFeedPage>
       scrollDirection: Axis.vertical,
       stones: _buildStonesList(data),
       reverse: false,
-      layersCount: 2,
+      layersCount:
+          MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 5,
     );
   }
 

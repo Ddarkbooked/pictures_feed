@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pictures_feed/data/model/like.dart';
 import 'package:provider/provider.dart';
 
@@ -65,6 +66,9 @@ class _LikeButtonWidgetState extends State<LikeButtonWidget>
       _animationController.reverse();
     });
     data.invertValue(widget.pictureIndex);
+    if (data.likeMap[widget.pictureIndex]) {
+      HapticFeedback.mediumImpact();
+    }
   }
 
   void _initAnim() {

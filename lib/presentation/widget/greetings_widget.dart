@@ -39,15 +39,15 @@ class _GreetingsWidgetState extends State<GreetingsWidget>
             children: [
               Text(
                 Strings.appTitle,
-                style: TextStyle(color: Colors.grey[800], fontSize: 30),
+                style: TextStyle(color: Colors.grey[800], fontSize: 32),
               ),
               Text(
                 Strings.createdGreetings,
-                style: TextStyle(color: Colors.grey[900]),
+                style: TextStyle(color: Colors.grey[900], fontSize: 16),
               ),
               Text(
                 Strings.frameworkGreetings,
-                style: TextStyle(color: Colors.grey[900]),
+                style: TextStyle(color: Colors.grey[900], fontSize: 16),
               )
             ],
           )),

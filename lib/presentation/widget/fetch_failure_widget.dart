@@ -12,7 +12,7 @@ class FetchFailureWidget extends StatelessWidget {
   Widget build(BuildContext context) => Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Text(Strings.cantLoadDataFetchFailure,
-            style: TextStyle(fontSize: 14.0)),
+            style: TextStyle(fontSize: 16.0)),
         SizedBox(height: 14.0),
         FractionallySizedBox(
           widthFactor: .6,
