@@ -11,6 +11,6 @@ class Strings {
   static final tryAgainFetchFailure = 'Try again';
 
   // GreetingsWidget
-  static final createdGreetings = 'created by Dmitry Doroshin 👨🏻‍';
+  static final createdGreetings = 'Created by Dmitry Doroshin 👨🏻‍';
   static final frameworkGreetings = 'via Flutter with ❤️';
 }
