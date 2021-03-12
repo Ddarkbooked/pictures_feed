@@ -2,7 +2,7 @@
     package="com.example.pictures_feed">
     <uses-permission android:name="android.permission.VIBRATE" />
    <application
-        android:label="Pictures"
+        android:label="Picture"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
