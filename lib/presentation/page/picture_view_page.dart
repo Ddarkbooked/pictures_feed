@@ -41,16 +41,16 @@ class _PictureViewPageState extends State<PictureViewPage> {
             : _buildWidgetHider(child: _buildStackedAppBar()),
         _isTapped
             ? Positioned(
-                left: 8.0,
-                bottom: 8.0,
+                left: 16.0,
+                bottom: 16.0,
                 child: _buildWidgetUnhider(
                     child: LikeButtonWidget(
                   pictureIndex: widget.pictureIndex,
                   backgroundColor: Colors.grey[850],
                 )))
             : Positioned(
-                left: 8.0,
-                bottom: 8.0,
+                left: 16.0,
+                bottom: 16.0,
                 child: _buildWidgetHider(
                     child: LikeButtonWidget(
                   pictureIndex: widget.pictureIndex,

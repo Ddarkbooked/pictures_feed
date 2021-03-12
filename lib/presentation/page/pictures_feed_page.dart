@@ -6,7 +6,6 @@ import 'package:pictures_feed/data/model/picture.dart';
 import 'package:pictures_feed/domain/bloc/pictures_request/pictures_request_bloc.dart';
 import 'package:pictures_feed/domain/bloc/pictures_request/pictures_request_event.dart';
 import 'package:pictures_feed/domain/bloc/pictures_request/pictures_request_state.dart';
-import 'package:pictures_feed/presentation/util/constants/strings.dart';
 import 'package:pictures_feed/presentation/widget/fetch_failure_widget.dart';
 import 'package:pictures_feed/presentation/widget/greetings_widget.dart';
 import 'package:pictures_feed/presentation/widget/picture_card_widget.dart';
@@ -45,7 +44,8 @@ class _PicturesFeedPageState extends State<PicturesFeedPage>
 
   @override
   Widget build(BuildContext context) => Scaffold(
-          body: ListView(controller: _scrollController, children: [
+      appBar: _buildAppBar(),
+      body: ListView(controller: _scrollController, children: [
         GreetingsWidget(),
         BlocBuilder<PicturesRequestBloc, PicturesRequestState>(
             builder: (BuildContext context, PicturesRequestState state) =>
@@ -89,4 +89,12 @@ class _PicturesFeedPageState extends State<PicturesFeedPage>
       );
     }).toList();
   }
+
+  Widget _buildAppBar() => PreferredSize(
+      preferredSize: Size.zero,
+      child: AppBar(
+        elevation: 0.0,
+        backgroundColor: Colors.transparent,
+        brightness: Brightness.light,
+      ));
 }

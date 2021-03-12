@@ -41,7 +41,7 @@ class _PictureCardWidgetState extends State<PictureCardWidget>
   @override
   Widget build(BuildContext context) => ScaleTransition(
       scale: Tween(
-        begin: 0.25,
+        begin: 0.8,
         end: 1.0,
       ).animate(
           CurvedAnimation(parent: _animController, curve: Curves.elasticOut)),

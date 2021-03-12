@@ -6,21 +6,32 @@ class GreetingsWidget extends StatefulWidget {
   _GreetingsWidgetState createState() => _GreetingsWidgetState();
 }
 
-class _GreetingsWidgetState extends State<GreetingsWidget> {
-  bool _isVisible;
+class _GreetingsWidgetState extends State<GreetingsWidget>
+    with TickerProviderStateMixin {
+  AnimationController _animationController;
+  Animation<double> _fadeIn;
 
   @override
   void initState() {
-    _isVisible = false;
+    _animationController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 1500),
+    );
+    _fadeIn = Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
+    _animationController.forward(from: 0.0);
     super.initState();
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    _isVisible = true;
-    return AnimatedOpacity(
-      duration: Duration(seconds: 5),
-      opacity: _isVisible ? 1.0 : 0.0,
+    return FadeTransition(
+      opacity: _fadeIn,
       child: Container(
           padding: const EdgeInsets.symmetric(vertical: 200),
           alignment: Alignment.center,
